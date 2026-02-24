@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "metaflow-jupyter"
+version = "0.1.0"
+description = "Jupyter-native tools for Metaflow"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+dependencies = [
+    "metaflow",
+    "ipython",
+]
+
+[project.optional-dependencies]
+widgets = ["anywidget"]
+dev = ["pytest", "nbformat"]
+
+[project.scripts]
+mf-export = "metaflow_jupyter.export:main"
