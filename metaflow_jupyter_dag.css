@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+.mf-dag-wrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: auto;
+  padding: 8px;
+}
+
+.mf-dag-svg {
+  display: block;
+}
